@@ -1,4 +1,9 @@
 OK criar container pro redis
    criar container pra aplicacao
+    python
+    criar o diretorio da aplicacao
+    bibliotecas instaladas
+    codigo fonte copiado
+    comando para rodar o container
    criar docker compose com tudo
    rodar e ver funcionando
