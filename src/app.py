@@ -13,7 +13,7 @@ redis_chaves_nomes = os.getenv('REDIS_CHAVE_NOMES', 'nomes')
 @app.route('/pessoa', methods=['GET'])
 def get_from_redis():
     all_items = redis_client.smembers(redis_chaves_nomes)
-    return ', '.join(sorted(all_items))
+    return  'Nomes no banco de dados: ' +  ', '.join(sorted(all_items)) 
 
 @app.route('/pessoa/<nome>', methods=['GET'])
 def set_on_redis(nome: str):
