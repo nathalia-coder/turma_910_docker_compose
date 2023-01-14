@@ -27,3 +27,12 @@ docker run -d --name servidor_redis --network nomes_network nomes_redis:1
 ```bash
 docker run -d -e REDIS_HOST=servidor_redis -e REDIS_CHAVE_NOMES=nomes --network nomes_network -p 8000:5000 --name servidor_aplicacao nomes_app:1 
 ```
+
+--- 
+
+# Comandos do Docker compose 
+
+- `docker compose up` - cria e inicia o ambiente
+- `docker compose stop` - para a execução do ambiente
+- `docker compose start` - continua a execução do ambiente
+- `docker compose down` - destrói o ambiente
